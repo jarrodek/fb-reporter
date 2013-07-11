@@ -1,0 +1,12 @@
+name: FbReporter
+version: 0.0.1
+author: Pawel Psztyc
+description: Facebook insights reporter
+dependencies:
+  browser: any
+  google_drive_v2_api: any
+  google_oauth2_v2_api: any
+  intl: any
+  js: any
+  web_ui: any
+  widget: any

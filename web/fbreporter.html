@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Facebook Reporter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="fbreporter.css">
+    <link rel="import" href="pageitem.html">
+    <link rel="import" href="postlistitem.html">
+  </head>
+  <body>
+    
+    <header>
+      <div class="row-fluid">
+        <div class="span3">
+          <template instantiate="if !fbi.isGoogleConnected">
+            <!-- Not logged in Google Service view -->
+            <span class="">You are not logged in to Google Services</span>
+            <input type="button" class="btn" on-click="fbi.googleLogin()" value="Google login"/>
+          </template>
+          <template instantiate="if fbi.isGoogleConnected">
+            <input type="button" class="btn" on-click="fbi.googleLogout()" value="Logout Google"/>
+          </template>
+        </div>
+        <div class="span1">
+          <template instantiate="if fbi.loading">
+            <div class="progress progress-striped active">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid">
+      
+      <template instantiate="if !fbi.isFacebookConnected">
+        <div class="row-fluid">
+          <!-- Not logged in to Facebook view -->
+          <div id="FacebookLogin" class="span4">
+            <div class="NotLoggedInMessage"><span class="hello">Hello,</span><br/>You're not logged into Facebook. Login clicking button below.</div>
+            <div class="fblogin-action">
+              <input type="button" class="btn btn-primary" on-click="fbi.facebookLogin()" value="Facebook login"/>
+            </div>
+          </div>
+        </div>
+      </template>
+      
+      
+      <template instantiate="if fbi.isFacebookConnected">
+        <div class="page-content {{selectedPageClass}}">
+          
+          <!-- Facebook page selector -->
+          <div id="PageChooser" class="{{chooserClass}}">
+            <h2 class="wide-title">Choose a page</h2>
+            <template iterate='page in fbi.pagesList'>
+              <div on-click="fbi.selectPage(page.id)" is="x-facebook-page-item" page="{{page}}"></div>
+            </template>
+          </div>
+          
+          <!-- Empty posts list message -->
+          <template instantiate="if fbi.selectedPage != null && fbi.pagePostList.length == 0 && !fbi.loading">
+            <div class="row-fluid">
+              <div id="EmptyPostsList" class="span4">
+                <div class="NoPostsMessage"><span class="hello">Hurray!</span><br/>There's no post here. Go for a coffe.</div>
+              </div>
+            </div>
+          </template>
+          
+          <!-- The list of posts -->
+          <template instantiate="if fbi.pagePostList.length > 0">
+            <div id="PostChooser" class="span12">
+              
+              <div class="row-fluid">
+                <div class="span8">
+                  <h2 class="wide-title">Posts overview</h2>
+                </div>
+                <div class="span4">
+                  date
+                </div>  
+              </div>
+              <!-- Posts actions container -->
+              <div class="row-fluid post-list-actions">
+                <div class="wrapper flex-container">
+                  <div class="post-action-item">
+                    <input type="button" on-click="fbi.togglePostsSelection($event)" id="SelectAllPostsToggle" class="list-action-button" value="Select all" />
+                  </div>
+                  <div class="post-action-item">
+                    <input type="button" class="list-action-button {{googleActionButtonsClass}}" value="Add selected to spreadsheet" />
+                  </div>
+                  <div data-action="spreadsheet-actions" class="post-action-item">
+                    <a href="#" data-action="spreadsheet-actions" on-click="openDropdown($event, 'spreadsheet-actions')" class="list-action-button {{googleActionButtonsClass}}">Attach spreadsheet<i class="icon-chevron-down"></i></a>
+                    <div id="SpreadsheetActions" class="action-dialog hidden">
+                      <div class="dialog-wrapper">
+                          <ul class="menu-items">
+                            <li on-click="fbi.selectSpreadsheetForPage($event)" class="main-item">Select</li>
+                            <li on-click="fbi.createSpreadsheetForPage($event)" class="main-item">Create</li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-action-item">
+                    <template instantiate="if !fbi.isGoogleConnected">
+                      <!-- Not logged in Google Service view -->
+                      <input type="button" on-click="fbi.googleLogin()" class="list-action-button" value="Log in to spreadsheet service" />
+                    </template>
+                    
+                  </div>
+                  <div class="post-action-item flex-auto-item">
+                    <a href="#" class="list-action-button"><i class="icon-chevron-left"></i>Back</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Posts list -->
+              <template iterate='post in fbi.pagePostList'>
+                <div class="facebook-post-item-container" is="x-facebook-post-list-item" post="{{post}}"></div>
+              </template>
+              
+              <!-- Load next button -->
+              <template instantiate="if fbi.isNextPagePostToken">
+                <div class="facebook-post-load-next">
+                  <a href="#" class="btn" on-click="fbi.loadNextPostsPage($event)">Load more</a>
+                </div>
+              </template>
+                
+            </div>
+          </template>
+        
+        </div>
+      </template>
+    </div>
+    <div id="fb-root"></div>
+    
+    
+    <div id="CreateSpreadsheetDialog" class="popup-dialog">
+      <div class="dialog-wrapper">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Create a spreadsheet</h3>
+        </div>
+        <div class="modal-body">
+          <div class="name-input">
+            <input type="text" id="SpreadsheetName" placeholder="enter spreadsheet name here..." />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+          <button class="btn btn-primary" data-accept="modal">Create</button>
+        </div>  
+      </div>
+    </div>
+    
+    
+    <script type="application/dart" src="fbreporter.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+    <script src="packages/browser/interop.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Post component</title>
+</head><body> 
+    <element name="x-facebook-post-list-item" constructor="FacebookPostListItemComponent" extends="div">
+      <template>
+        
+        <div class="row-fluid post-list-item" data-postid="{{post['id']}}">
+          
+          <div class="span1 postselector">
+            <input type="checkbox" data-postid="{{post['id']}}" value="{{post['id']}}">
+          </div>
+          <div class="span7 pagename">
+            <div class="post-attributtes">
+              <span class="post-created">{{post['created_time']}}</span>
+              <template instantiate="if post['story'] != null"><span class="post-strory">{{post['story']}}</span></template>
+            </div>
+            <div class="post-content">
+              <template instantiate="if post['message'] != null">{{post['message']}}</template>
+            </div>
+          </div>
+          
+          <div class="span1 postimage">
+            <template instantiate="if post['picture'] != null">
+              <img src="{{post['picture']}}" class="img-polaroid"/>
+            </template>
+          </div>
+          
+          <div class="span3 postactions">
+            <input type="button" class="btn" value="details"/>
+            <input type="button" class="btn btn-primary" value="Add to report"/>
+          </div>
+          
+        </div>
+        
+      </template>
+      <script type='application/dart'>
+        import 'package:web_ui/web_ui.dart';
+        class FacebookPostListItemComponent extends WebComponent {
+          var post;
+        }
+     </script>
+    </element>
+  </body>
+</html>
