@@ -2,6 +2,7 @@ library fbreporter;
 
 import 'dart:html';
 import 'dart:async';
+import "dart:json" as JSON;
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:web_ui/web_ui.dart';
@@ -13,9 +14,11 @@ import 'package:widget/effects.dart';
 import 'package:widget/components/modal.dart';
 
 part 'facebook.dart';
+part 'drive.dart';
+part 'store.dart';
 
-final CLIENT_ID = "796343192238.apps.googleusercontent.com";
-final SCOPES = [drivelib.Drive.DRIVE_FILE_SCOPE,'https://spreadsheets.google.com/feeds','https://docs.google.com/feeds'];
+final CLIENT_ID = "933209257700.apps.googleusercontent.com";
+final SCOPES = [drivelib.Drive.DRIVE_FILE_SCOPE,drivelib.Drive.DRIVE_SCOPE, 'https://spreadsheets.google.com/feeds','https://docs.google.com/feeds', 'https://www.googleapis.com/auth/userinfo.profile'];
 final FB_SCOPES = ['manage_pages','read_insights'];
 
 
@@ -35,7 +38,6 @@ void main() {
 
 class FacebookInsights {
   GoogleOAuth2 auth;
-  drivelib.Drive drive;
   
   @observable Token google_auth_token;
   @observable FacebookAuth fbauth;
@@ -56,9 +58,6 @@ class FacebookInsights {
   
   FacebookInsights(){
     auth = new GoogleOAuth2(CLIENT_ID, SCOPES);
-    drive = new drivelib.Drive(auth);
-    drive.makeAuthRequests = true;
-    
     
     auth.login(immediate: true).then(handleGoogleToken);
     setUpFacebook();
@@ -244,7 +243,18 @@ class FacebookInsights {
         } else if(el.dataset.containsKey('accept')){
           InputElement ie = query('#SpreadsheetName');
           var value = ie.value;
-          print(value);
+          
+          GDrive d = new GDrive(auth);
+          d.createStructuredSpreadsheet(value)
+            .then((data){
+              print('OK');
+              print(data.id);
+            })
+            .catchError((e){
+              print('error');
+              window.console.log(e);
+            });
+          
           
           ModalManager.hide(dialog);
           ev.cancel();
@@ -256,17 +266,8 @@ class FacebookInsights {
     
     return;
     //<id>https://spreadsheets.google.com/feeds/list/0Ajpy9PK_RiBOdDhfdjB2Mk1XbjFSZGNlQS00MUlkaHc/od6/private/full/1</id>
-    var contentType = 'application/vnd.google-apps.spreadsheet';
-    var base64Data = window.btoa('');
-    var newFile = new drivelib.File.fromJson({"title": 'API test', "mimeType": contentType});
-    drive.files.insert(newFile, content: base64Data, contentType: contentType)
-      .then((data) {
-        window.console.log(data);
-        print(data['alternateLink']);
-      })
-      .catchError((e) {
-        window.console.log(e);
-      });
+    
+    
     
   }
   void selectSpreadsheetForPage(Event e){
