@@ -1,0 +1,1995 @@
+---
+build.dart --machine --full
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 10195 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 13714 ms
+build.dart finished [16801 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5343 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6749 ms
+build.dart finished [9036 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6584 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 8429 ms
+build.dart finished [10208 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6751 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 8209 ms
+build.dart finished [10357 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5422 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7086 ms
+build.dart finished [9832 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4861 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6182 ms
+build.dart finished [7904 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5314 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6726 ms
+build.dart finished [7334 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5018 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6448 ms
+build.dart finished [7103 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5203 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6530 ms
+build.dart finished [7139 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5261 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6662 ms
+build.dart finished [7300 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4783 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6161 ms
+build.dart finished [6862 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4676 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5975 ms
+build.dart finished [6558 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4653 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5947 ms
+build.dart finished [6551 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4694 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6006 ms
+build.dart finished [6608 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4730 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6093 ms
+build.dart finished [6665 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4371 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5613 ms
+build.dart finished [6188 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4433 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5675 ms
+build.dart finished [6234 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4569 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5801 ms
+build.dart finished [6373 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4510 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5751 ms
+build.dart finished [6311 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4491 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5758 ms
+build.dart finished [6439 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4459 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5706 ms
+build.dart finished [6284 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4612 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5855 ms
+build.dart finished [6495 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4478 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5717 ms
+build.dart finished [6862 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4452 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5698 ms
+build.dart finished [6266 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4488 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5732 ms
+build.dart finished [6352 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4570 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5876 ms
+build.dart finished [6451 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4450 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5702 ms
+build.dart finished [6269 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4518 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5788 ms
+build.dart finished [6351 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5312 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6687 ms
+build.dart finished [7328 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4719 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5978 ms
+build.dart finished [8633 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4456 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5699 ms
+build.dart finished [6257 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4712 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5969 ms
+build.dart finished [6547 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4468 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5719 ms
+build.dart finished [6286 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4730 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5988 ms
+build.dart finished [6563 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4561 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5803 ms
+build.dart finished [6380 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4480 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5737 ms
+build.dart finished [6306 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6088 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 8937 ms
+build.dart finished [10361 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5144 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6441 ms
+build.dart finished [9173 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4807 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6070 ms
+build.dart finished [6660 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4492 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6009 ms
+build.dart finished [6615 ms]
+
+---
+build.dart --machine --full
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5097 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6841 ms
+build.dart finished [7698 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4841 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6900 ms
+build.dart finished [8272 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4388 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5629 ms
+build.dart finished [6225 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4885 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6104 ms
+build.dart finished [6664 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4448 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5719 ms
+build.dart finished [6390 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4600 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5877 ms
+build.dart finished [6523 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4497 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5721 ms
+build.dart finished [6455 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4540 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5791 ms
+build.dart finished [6364 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4417 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5674 ms
+build.dart finished [6244 ms]
+
+---
+build.dart --machine --full
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5197 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6937 ms
+build.dart finished [14972 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5671 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7156 ms
+build.dart finished [8293 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5393 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6905 ms
+build.dart finished [7572 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4538 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5824 ms
+build.dart finished [7546 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6730 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 8019 ms
+build.dart finished [14414 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5556 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6818 ms
+build.dart finished [10210 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4457 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5672 ms
+build.dart finished [6563 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4570 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5797 ms
+build.dart finished [6364 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5419 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7736 ms
+build.dart finished [8701 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4745 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6018 ms
+build.dart finished [6717 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4621 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5974 ms
+build.dart finished [7211 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4829 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6087 ms
+build.dart finished [7814 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4609 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5852 ms
+build.dart finished [6584 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5111 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6466 ms
+build.dart finished [7450 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4577 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5826 ms
+build.dart finished [7728 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5042 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6440 ms
+build.dart finished [7256 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5770 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7160 ms
+build.dart finished [7866 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4556 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5786 ms
+build.dart finished [6365 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5239 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6938 ms
+build.dart finished [7676 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4823 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6062 ms
+build.dart finished [6767 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4701 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5940 ms
+build.dart finished [6674 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4480 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5723 ms
+build.dart finished [7295 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4528 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5786 ms
+build.dart finished [6339 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5548 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6909 ms
+build.dart finished [7590 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5316 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6889 ms
+build.dart finished [7639 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5390 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6955 ms
+build.dart finished [7762 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6662 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 8184 ms
+build.dart finished [8818 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4507 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5723 ms
+build.dart finished [6367 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4430 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5710 ms
+build.dart finished [6282 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5711 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7853 ms
+build.dart finished [8920 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4872 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6103 ms
+build.dart finished [6801 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6170 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7912 ms
+build.dart finished [8884 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6561 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 8333 ms
+build.dart finished [9292 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 6714 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 10022 ms
+build.dart finished [10839 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5194 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7199 ms
+build.dart finished [8721 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4486 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6076 ms
+build.dart finished [6744 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4722 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5944 ms
+build.dart finished [6530 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5284 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6631 ms
+build.dart finished [7245 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5278 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6718 ms
+build.dart finished [7405 ms]
+
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5699 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 7177 ms
+build.dart finished [7776 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4373 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5578 ms
+build.dart finished [6151 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4339 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5556 ms
+build.dart finished [6150 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5045 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6259 ms
+build.dart finished [6809 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4371 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5591 ms
+build.dart finished [6169 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4337 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5546 ms
+build.dart finished [6104 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4378 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5665 ms
+build.dart finished [6261 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5175 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6377 ms
+build.dart finished [6933 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4535 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5771 ms
+build.dart finished [6366 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4454 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5679 ms
+build.dart finished [6240 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4361 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5594 ms
+build.dart finished [6231 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4381 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5582 ms
+build.dart finished [6194 ms]
+
+---
+build.dart --machine --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4793 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6040 ms
+build.dart finished [6616 ms]
+
+---
+build.dart --machine --changed=web\drive.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4373 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5587 ms
+build.dart finished [6151 ms]
+
+---
+build.dart --machine --changed=web\drive.dart --changed=web\store.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 5174 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 6532 ms
+build.dart finished [7180 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4471 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5702 ms
+build.dart finished [6344 ms]
+
+---
+build.dart --machine --changed=web\fbreporter.dart
+[{"method":"warning","params":{"file":null,"message":"parsing error expected }","line":218,"charStart":4312,"charEnd":4314}}]
+[{"method":"warning","params":{"file":null,"message":"premature end of file unknown CSS","line":218,"charStart":4314,"charEnd":4315}}]
+Total time spent on web/fbreporter.html                      -- 4505 ms
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html_bootstrap.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\css\\bootstrap.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.css"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart.map"}}]
+[{"method":"mapping","params":{"from":"web/fbreporter.html","to":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.html"}}]
+[{"method":"generated","params":{"file":"web\\out\\pageitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\postlistitem.html.dart.map"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart"}}]
+[{"method":"generated","params":{"file":"web\\out\\fbreporter.dart.map"}}]
+Total time                                                   -- 5827 ms
+build.dart finished [6400 ms]
+
