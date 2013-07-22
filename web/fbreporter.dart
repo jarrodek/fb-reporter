@@ -35,6 +35,7 @@ void main() {
   fbi = new FacebookInsights();
 }
 
+DateTime today = new DateTime.now();
 
 
 class FacebookInsights {
@@ -71,6 +72,10 @@ class FacebookInsights {
   @observable bool spreadsheetSheetsListLoading = false;
   @observable PostsSelectionController postsSelectionController = new PostsSelectionController();
   @observable List pagePostInsights;
+  
+  
+  DateTime dateRangeStart;
+  DateTime dateRangeEnd;
   
   FacebookInsights(){
     auth = new GoogleOAuth2(CLIENT_ID, SCOPES);
@@ -161,6 +166,22 @@ class FacebookInsights {
     var path = '';
     if(nextPagePostToken == null || nextPagePostToken.isEmpty){
       path = '/$selectedPage/posts?fields=id,message,story,created_time,picture,type,status_type';
+      bool setLimit = false;
+      if(dateRangeStart != null){
+        int since = (dateRangeStart.millisecondsSinceEpoch/1000).round();
+        path += "&since=$since";
+        setLimit = true;
+        //posts?void=true&since=1367359200&until=1369951200&limit=1000  //may 2013
+      }
+      if(dateRangeEnd != null){
+        int until = (dateRangeEnd.millisecondsSinceEpoch/1000).round();
+        path += "&until=$until";
+        setLimit = true;
+      }
+      if(setLimit){
+        path += "&limit=1000";
+      }
+      
     } else {
       path = nextPagePostToken;
     }
@@ -477,7 +498,6 @@ class FacebookInsights {
           alert.xtag.show();
           
         });
-        
       })
       .catchError((e){
         print('error');
@@ -590,6 +610,9 @@ class FacebookInsights {
       ..addCondition('period', '= 0')
       ..addCondition('metric', 'IN ("post_impressions_unique","post_stories_by_action_type","post_story_adds_by_action_type_unique","post_storytellers")')
       ..addCondition('object_id', '= "$post_id"');
+    
+    
+    //created_time
     FqlQuery q2 = new FqlQuery();
     q2.table = 'stream';
     q2.metrics.addAll(["post_id","created_time","message","type","attachment.media","attachment.fb_object_type","attachment.icon","permalink","description"]);
@@ -614,7 +637,19 @@ class FacebookInsights {
         pagePostInsightLoading = false;
         new Toast.makeText(e.toString(), Toast.LENGTH_INFINITY, true).show();
       });
-  } 
+  }
+  
+  void onDateRangeChange(Event e){
+    Element picker = query('#DateSelector');
+    if(picker.xtag == null){
+      new Toast.makeText("Unable to get date range :(", Toast.LENGTH_INFINITY, true).show();
+      return;
+    }
+    dateRangeStart = picker.xtag.selectionstart;
+    dateRangeEnd = picker.xtag.selectionend;
+    selectPage(selectedPage);
+  }
+  
 }
 
 

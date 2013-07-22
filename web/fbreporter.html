@@ -13,6 +13,7 @@
     <link rel="import" href="postlistitem.html">
     <link rel="import" href="post_interaction.html">
     <link rel="import" href="post_details.html">
+    <link rel="import" href="daterange.html">
     <link rel="import" href="packages/widget/components/modal.html">
     <link rel="import" href="packages/widget/components/dropdown.html">
   </head>
@@ -76,9 +77,19 @@
           
           <!-- Empty posts list message -->
           <template instantiate="if fbi.selectedPage != null && fbi.pagePostList.length == 0 && !fbi.loading">
-            <div class="row-fluid">
-              <div id="EmptyPostsList" class="span4">
-                <div class="NoPostsMessage"><span class="hello">Hurray!</span><br/>There's no post here. Go for a coffe.</div>
+            <div id="PostChooser" class="{{postsListClass}}">
+              <div class="row-fluid">
+                <div class="span8">
+                  <h2 class="wide-title">Posts overview</h2>
+                </div>
+                <div class="span4 hidden-on-post-details">
+                  <x-date-range id="DateSelector" on-change="fbi.onDateRangeChange($event)" selectionend="{{fbi.dateRangeEnd}}" selectionstart="{{fbi.dateRangeStart}}" limitright="{{today}}"></x-date-range>
+                </div>  
+              </div>
+              <div class="row-fluid">
+                <div id="EmptyPostsList" class="span4">
+                  <div class="NoPostsMessage"><span class="hello">Hurray!</span><br/>There's no post here. Go for a coffe.</div>
+                </div>
               </div>
             </div>
           </template>
@@ -89,10 +100,10 @@
               
               <div class="row-fluid">
                 <div class="span8">
-                  <h2 class="wide-title">Posts overview</h2>
+                  <h2 class="wide-title">Posts overview ({{fbi.pagePostList.length}})</h2>
                 </div>
                 <div class="span4 hidden-on-post-details">
-                  date changer
+                  <x-date-range id="DateSelector" on-change="fbi.onDateRangeChange($event)" selectionend="{{fbi.dateRangeEnd}}" selectionstart="{{fbi.dateRangeStart}}" limitright="{{today}}"></x-date-range>
                 </div>  
               </div>
               
