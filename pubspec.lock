@@ -4,31 +4,31 @@ packages:
   analyzer_experimental:
     description: analyzer_experimental
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   args:
     description: args
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   bot:
     description: bot
     source: hosted
-    version: "0.22.0"
+    version: "0.22.1"
   bot_io:
     description: bot_io
     source: hosted
-    version: "0.21.2"
+    version: "0.21.3"
   bot_web:
     description: bot_web
     source: hosted
-    version: "0.20.1"
+    version: "0.20.2"
   browser:
     description: browser
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   crypto:
     description: crypto
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   csslib:
     description: csslib
     source: hosted
@@ -48,7 +48,7 @@ packages:
   hop:
     description: hop
     source: hosted
-    version: "0.22.2"
+    version: "0.23.0"
   html5lib:
     description: html5lib
     source: hosted
@@ -56,11 +56,11 @@ packages:
   http:
     description: http
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   intl:
     description: intl
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   js:
     description: js
     source: hosted
@@ -68,31 +68,31 @@ packages:
   logging:
     description: logging
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   meta:
     description: meta
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   oauth2:
     description: oauth2
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   pathos:
     description: pathos
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   source_maps:
     description: source_maps
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+3"
   unittest:
     description: unittest
     source: hosted
-    version: "0.5.20"
+    version: "0.6.3+1"
   web_ui:
     description: web_ui
     source: hosted
-    version: "0.4.13+2"
+    version: "0.4.14"
   widget:
     description: widget
     source: hosted

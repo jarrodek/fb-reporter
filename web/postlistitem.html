@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html><head>
     <title>Post component</title>
+    <link rel="import" href="packages/widget/components/alert.html">
 </head><body> 
     <element name="x-facebook-post-list-item" constructor="FacebookPostListItemComponent" extends="div">
       <template>
         
-        <div class="row-fluid post-list-item" data-postid="{{post['id']}}">
-          
-          <div class="span1 postselector">
-            <input type="checkbox" data-postid="{{post['id']}}" value="{{post['id']}}">
+        <div class="facebook-post-item-container {{containerClass}}">
+        
+        <div on-click="changeSelection($event)" class="row-fluid post-list-item" data-postid="{{post['id']}}">
+          <div class="span1 postselector hidden-on-post-details">
+            <input bind-checked="selection" type="checkbox" data-postid="{{post['id']}}" value="{{post['id']}}">
           </div>
-          <div class="span7 pagename">
+          
+          <div class="{{pageNameClass}} pagename">
             <div class="post-attributtes">
               <span class="post-created">{{post['created_time']}}</span>
               <template instantiate="if post['story'] != null"><span class="post-strory">{{post['story']}}</span></template>
@@ -20,26 +23,32 @@
             </div>
           </div>
           
-          <div class="span1 postimage">
+          <div class="{{postimageClass}} postimage">
             <template instantiate="if post['picture'] != null">
               <img src="{{post['picture']}}" class="img-polaroid"/>
             </template>
           </div>
-          
-          <div class="span3 postactions">
-            <input type="button" class="btn" value="details"/>
-            <input type="button" class="btn btn-primary" value="Add to report"/>
-          </div>
-          
+          <template instantiate="if !ctrl.postSelectedMode">
+            <div class="span3 postactions">
+              <input type="button" data-action="show-post-details" data-postid="{{post['id']}}" class="btn" value="details"/>
+              <input type="button" data-action="add-single-post" data-postid="{{post['id']}}" class="btn btn-primary" value="Add to report"/>
+              <div class="hidden" data-postindicator="{{post['id']}}">
+                <div class="bar" style="width: 100%"></div>
+              </div>
+            </div>
+          </template>
         </div>
-        
+        <div is="x-alert" class="hidden">
+          <button type="button" class="close" data-dismiss="alert">x</button>
+          <h4 class="alert-heading">Oh snap!</h4>
+          <p>It seems that this post won't be inserted to spreadsheet because lack of statistics. If you think it is an error, contact support.</p>
+          <p>
+            <a data-dismiss="alert" class="btn" on-click="$event.preventDefault(); $event.target.parent.parent.parent.xtag.hide()" href="#">Close</a>
+          </p>
+        </div>
+        </div>
       </template>
-      <script type='application/dart'>
-        import 'package:web_ui/web_ui.dart';
-        class FacebookPostListItemComponent extends WebComponent {
-          var post;
-        }
-     </script>
+      <script type='application/dart' src="postlistitem.dart"></script>
     </element>
   </body>
 </html>

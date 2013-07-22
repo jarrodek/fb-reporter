@@ -28,16 +28,18 @@ class GDrive {
   }
   
   
-  Future createStructuredSpreadsheet(String filenaName, [List columns=null]){
-    var coulmnNames;
-    if(columns != null)
-      coulmnNames = columns.join(',');
-    else
-      coulmnNames = 'Data,Entry,Attachment,Likes,Unique likes,Comment,Unique comment,Shares,Unique shares,Virality,Talking about this,Range';
+  Future<drivelib.File> createStructuredSpreadsheet(String filenaName, List<String> columns, [String parentId=null]){
     Completer completer = new Completer();
-    var base64Data = window.btoa(coulmnNames);
     
+    var coulmnNames = columns.join(',');
+    var base64Data = window.btoa(coulmnNames);
     var newFile = new drivelib.File.fromJson({"title": filenaName, "mimeType": "text/csv"});
+    
+    if(parentId != null){
+      drivelib.ParentReference parent = new drivelib.ParentReference.fromJson({'id':parentId});
+      newFile.parents = [parent];
+    }
+    
     _drive.files.insert(newFile, content: base64Data, contentType: "text/csv", convert: true)
     .then((drivelib.File data) {
       //window.console.log(data);
@@ -115,18 +117,108 @@ class GDrive {
     
   }
   
-  Future getFile(String fileId){
+  Future<drivelib.File> getFile(String fileId){
     Completer completer = new Completer();
     
-    new drivelib.Drive().files.get(fileId).then((var file){
-      
+    if(fileId == null){
+      completer.completeError(new Exception("File ID can't be empty."));
+      return completer.future;
+    }
+    
+    _drive.makeAuthRequests = true;
+    _drive.files.get(fileId).then((drivelib.File file){
+      completer.complete(file);
     });
     
+    return completer.future;
+  }
+  ///Find or create Config folder on Google Drive.
+  Future<String> getConfigFileFolder(){
+    Completer completer = new Completer();
+    
+    String query = 'title=\'FacebookReporterFiles\' and mimeType=\'application/vnd.google-apps.folder\'';
+    
+    String findinResults(drivelib.FileList list){
+      if(!list.items.any((drivelib.File file){ return file.title == 'FacebookReporterFiles'; })){
+        return null;
+      }
+      String _id;
+      list.items.forEach((drivelib.File file){
+        if(file.title == 'FacebookReporterFiles'){
+          _id = file.id;
+        }
+      });
+      return _id;
+    }
+    
+    Future<String> createIfNecessary(String fileid){
+      if(fileid != null){
+        return new Future.value(fileid);
+      }
+      return _createConfigFileFolder();
+    }
+    
+    _drive.files.list(maxResults: 1, q: query)
+            .then((drivelib.FileList list) => findinResults(list))
+            .then((String fileId) => createIfNecessary(fileId))
+            .then((String fileId){
+              completer.complete(fileId);
+            })
+            .catchError((e) {
+              completer.completeError(e);
+            });
+    
+    return completer.future;
+  }
+  
+  
+  Future<String> createConfigFile(String parentId){
+    Completer completer = new Completer();
+    
+    List<String> columns = ['page_id','sheet_id','drive_file_id','raport_config','spreadsheet_title','sheet_title'];
+    createStructuredSpreadsheet('raports_config', columns, parentId)
+      .then((drivelib.File file){
+        completer.complete(file.id);
+      })
+      .catchError((e) {
+        completer.completeError(e);
+      });
+    return completer.future;
+  }
+  
+  
+  Future<String> _createConfigFileFolder(){
+    Completer completer = new Completer();
+    var newFile = new drivelib.File.fromJson({"title": 'FacebookReporterFiles', "mimeType": 'application/vnd.google-apps.folder'});
+    _drive.files.insert(newFile)
+      .then((drivelib.File data) {
+        completer.complete(data.id);
+      })
+      .catchError((e) {
+        //window.console.log(e);
+        completer.completeError(e);
+      });
+    return completer.future;
   }
   
   
   
   
+  
+  
+  
+  
+  /*
+  factory GDrive.revalidate(GoogleOAuth2 auth){
+    _cache = null;
+    var driveLib = new drivelib.Drive(auth);
+    driveLib.makeAuthRequests = true;
+    final GDrive drive = new GDrive._internal(driveLib, auth);
+    
+    _cache = drive;
+    return drive;
+  }
+  */
   factory GDrive(GoogleOAuth2 auth){
     if(_cache != null){
       return _cache;

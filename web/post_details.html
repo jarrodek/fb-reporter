@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <link rel="import" href="post_interaction.html">
+  </head>
+  <body>   
+    <element name="x-post-insights" constructor="FacebookPostInsightView" extends="div">
+       <template>
+         
+         <div class="row-fluid post-insights">
+          <div class="span12">
+            <h2 class="wide-title">Post insights</h2>
+          </div>
+        </div>
+        
+        <div is="x-post-interaction" inlist="{{false}}" fbi="{{ctrl}}"></div>
+        
+        <div class="row-fluid post-insights">
+          <div class="span12">
+            <div class="post-meta-data">
+              <span class="post-create-time">{{created_time}}</span>
+              <span class="post-description">{{postData['description'] == null ? '' : postData['description']}}</span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Posts insights container -->
+        <div class="row-fluid post-insights">
+          <div class="span6">
+            <div class="post-image-container">
+              <template instantiate="if postPicture == null">
+                <div class="no-post-image">No image</div>
+              </template>
+              <template instantiate="if postPicture != null">
+                <img src="{{postPicture['src']}}" data-width="{{postPicture['width']}}" data-height="{{postPicture['height']}}" class="img-polaroid"/>
+              </template>
+            </div>
+          </div>
+          <div class="span6">
+            <div class="post-message">
+              <template instantiate="if postData['message'] == null">
+                <i>No message available</i>
+              </template>
+              <template instantiate="if postData['message'] != null">
+                <p class="post-message-body">{{postData['message']}}</p>
+              </template>
+            </div>
+            <div class="insights-widget row-fluid">
+              <span class="span12">
+                  <strong class="reach-value">{{post_impressions_unique}}</strong> People Reached
+              </span>
+            </div>
+              
+            <div class="insights-widget row-fluid">
+              <span class="span4">
+                  <h3>Likes</h3>
+                  <span class="value"><strong>{{(post_stories_by_action_type == null || post_stories_by_action_type['like'] == null) ? 0 : post_stories_by_action_type['like']}}</strong></span>
+              </span>
+              <span class="span4">
+                  <h3>Shares</h3>
+                  <span class="value"><strong>{{(post_stories_by_action_type == null || post_stories_by_action_type['share'] == null) ? 0 : post_stories_by_action_type['share']}}</strong></span>
+              </span>
+              <span class="span4">
+                  <h3>Comments</h3>
+                  <span class="value"><strong>{{(post_stories_by_action_type == null || post_stories_by_action_type['comment'] == null) ? 0 : post_stories_by_action_type['comment']}}</strong></span>
+              </span>
+            </div>
+            
+            <div class="post-actions">
+              <template instantiate="if ctrl.isGoogleConnected">
+                <button data-action="add-single-post" data-postid="{{postData['post_id']}}" class="btn btn-large btn-primary" type="button">Add to spreadsheet</button>
+              </template>
+              <template instantiate="if !ctrl.isGoogleConnected">
+                <button class="btn btn-large btn-warning" type="button">Log in to Google Service</button>
+              </template>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid post-insights">
+        <div class="span12">
+          <dl class="dl-horizontal">
+            <dt>Talking about this:</dt>
+            <dd>{{post_storytellers}}</dd>
+            <dt>Unique likes:</dt>
+            <dd>{{(post_story_adds_by_action_type_unique == null || post_story_adds_by_action_type_unique['like'] == null) ? 0 : post_story_adds_by_action_type_unique['like']}}</dd>
+            <dt>Unique shares:</dt>
+            <dd>{{(post_story_adds_by_action_type_unique == null || post_story_adds_by_action_type_unique['share'] == null) ? 0 : post_story_adds_by_action_type_unique['share']}}</dd>
+            <dt>Unique comments:</dt>
+            <dd>{{(post_story_adds_by_action_type_unique == null || post_story_adds_by_action_type_unique['comment'] == null) ? 0 : post_story_adds_by_action_type_unique['comment']}}</dd>
+          </dl>
+        </div>
+        </div>
+        
+       </template>
+       <script type="application/dart" src="post_details.dart"></script>
+    </element>
+  </body>
+</html>

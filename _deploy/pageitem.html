@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Page component</title>
+</head><body> 
+    <element name="x-facebook-page-item" constructor="FacebookPageItemComponent" extends="div">
+      <template>
+        <div class="row-fluid page-item" data-pageid="{{page.id}}">
+          <div class="span2 pageimage">
+            <img src="https://graph.facebook.com/{{page.id}}/picture" class="img-polaroid"/>
+          </div>
+          <div class="span10 pagename">
+            {{page.name}}
+          </div>
+        </div>
+      </template>
+      <script type="application/dart" src="pageitem.dart"></script>
+    </element>
+  </body>
+</html>

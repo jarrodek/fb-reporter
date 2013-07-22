@@ -5,21 +5,15 @@
     <element name="x-facebook-page-item" constructor="FacebookPageItemComponent" extends="div">
       <template>
         <div class="row-fluid page-item" data-pageid="{{page.id}}">
-          <div class="span2 pageimage">
+          <div class="span3 pageimage">
             <img src="https://graph.facebook.com/{{page.id}}/picture" class="img-polaroid"/>
           </div>
-          <div class="span10 pagename">
+          <div class="span9 pagename">
             {{page.name}}
           </div>
         </div>
       </template>
-      <script type='application/dart'>
-        import 'package:web_ui/web_ui.dart';
-        class FacebookPageItemComponent extends WebComponent {
-          int test = 0;
-          var page;
-        }
-     </script>
+      <script type="application/dart" src="pageitem.dart"></script>
     </element>
   </body>
 </html>

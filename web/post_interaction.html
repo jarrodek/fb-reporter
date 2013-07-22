@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <link rel="import" href="packages/widget/components/dropdown.html">
+  </head>
+  <body>   
+    <element name="x-post-interaction" constructor="PostInteraction" extends="div">
+       <template>
+        <!-- Posts actions container -->
+        <div class="row-fluid post-list-actions">
+          <div class="wrapper flex-container">
+            
+            <template instantiate="if inlist">
+            <div class="post-action-item">
+              <input type="button" data-state="none" on-click="toggleSelection($event)" class="list-action-button" value="Select all" />
+            </div>
+            
+            <div class="post-action-item">
+              <input title="Add selected posts to spreadsheet" type="button" on-click="postSelection($event)" class="list-action-button {{googleActionButtonsClass}}" value="Add selected to spreadsheet" />
+            </div>
+            </template>
+            
+            <div data-action="spreadsheet-actions" class="post-action-item">
+              <!-- has no spreadsheet attached -->
+              <template instantiate="if fbi.currentPageConfig == null || fbi.currentPageConfig.sheetId == null">
+                <x-dropdown on-click="dropdownClickCallback($event)">
+                  <a href="#" data-toggle="dropdown" class="list-action-button {{googleActionButtonsClass}}">Attach spreadsheet<i data-toggle="dropdown" class="icon-chevron-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a data-toggle="dropdown" data-action="select-spreadsheet-for-page">Select</a></li>
+                    <li><a data-toggle="dropdown" data-action="create-spreadsheet-for-page">Create</a></li>
+                  </ul>
+                </x-dropdown>
+              </template>
+              <!-- has spreadsheet attached -->
+              <template instantiate="if fbi.currentPageConfig != null && fbi.currentPageConfig.sheetId != null">
+                <x-dropdown class="attachedSpreadsheetActions" on-click="dropdownClickCallback($event)">
+                  <a href="#" data-toggle="dropdown" class="list-action-button {{googleActionButtonsClass}}">
+                    <span data-toggle="dropdown" class="spreadsheet-title-action-label">{{fbi.currentPageConfig.spreadsheetTitle}}</span> {{fbi.currentPageConfig.sheetTitle}}<i data-toggle="dropdown" class="icon-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li title="Remove association of this spredsheet to Facebook page">
+                      <a data-toggle="dropdown" data-action="detach-spreadsheet-from-page">Detach sheet</a>
+                    </li>
+                    <li title="Add new worksheet to selected spreadsheet">
+                      <a data-toggle="dropdown" data-action="add-worksheet-to-page">Add new worksheet</a>
+                    </li>
+                    <li>
+                      <a href="https://docs.google.com/spreadsheet/ccc?key={{fbi.currentPageConfig.fileId}}" target="_blank">Open in new tab</a>
+                    </li>
+                    <template instantiate="if fbi.spreadsheetSheetsListLoading">
+                      <li class="dropdown-loading">
+                        loading....
+                      </li>
+                    </template>
+                    <template instantiate="if fbi.spreadsheetSheetsList[fbi.currentPageConfig.fileId] != null">
+                      <li class="divider"></li>
+                      <template iterate='sheetInfo in fbi.spreadsheetSheetsList[fbi.currentPageConfig.fileId]'>
+                        <li title="Use this sheed for reports">
+                          <a data-toggle="dropdown" data-params="{{sheetInfo.id}}" data-action="replace-worksheet-for-page">{{sheetInfo.title}}</a>
+                        </li>
+                      </template>
+                    </template>
+                  </ul>
+                </x-dropdown>
+              </template>
+            </div>
+            <div class="post-action-item">
+              
+              <!-- Not logged in Google Service view -->
+              <template instantiate="if !fbi.isGoogleConnected">
+                <input type="button" on-click="fbi.googleLogin()" class="list-action-button" value="Log in to spreadsheet service" />
+              </template>
+              
+            </div>
+            <div class="post-action-item flex-auto-item">
+              <a href="#" on-click="backAction($event)" class="list-action-button"><i class="icon-chevron-left"></i>Back</a>
+            </div>
+          </div>
+        </div>
+       </template>
+       <script type="application/dart" src="post_interaction.dart"></script>
+    </element>
+  </body>
+</html>
