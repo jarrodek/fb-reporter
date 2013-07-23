@@ -31,10 +31,17 @@
           <div class="span6">
             <div class="post-image-container">
               <template instantiate="if postPicture == null">
-                <div class="no-post-image">No image</div>
+                <div class="no-post-image">
+                  <div class="no-post-image-info">No photo</div>
+                  <div id="pong">
+                    <div class="pad"></div>
+                    <div class="ball"></div>
+                    <div class="pad"></div>
+                  </div>
+                </div>
               </template>
               <template instantiate="if postPicture != null">
-                <img src="{{postPicture['src']}}" data-width="{{postPicture['width']}}" data-height="{{postPicture['height']}}" class="img-polaroid"/>
+                <img src="{{postPicture['src']}}" data-width="{{postPicture['width'] == null ? 'auto' : postPicture['width']}}" data-height="{{postPicture['height'] == null ? 'auto' : postPicture['height']}}" class="img-polaroid"/>
               </template>
             </div>
           </div>
@@ -44,12 +51,15 @@
                 <i>No message available</i>
               </template>
               <template instantiate="if postData['message'] != null">
-                <p class="post-message-body">{{postData['message']}}</p>
+                <p class="post-message-body">{{linkify(postData['message'])}}</p>
               </template>
             </div>
-            <div class="insights-widget row-fluid">
-              <span class="span12">
+            <div class="insights-widget reach row-fluid">
+              <span class="span6">
                   <strong class="reach-value">{{post_impressions_unique}}</strong> People Reached
+              </span>
+              <span class="span6">
+                  Virality: <strong class="virality-value">{{virality}}</strong>%
               </span>
             </div>
               

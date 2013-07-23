@@ -17,9 +17,11 @@
   border: 1px #e5e5e5 solid;
   border-radius: 4px;
   position: relative;
+  padding: 5px 10px;
 }
 .dr_input-value-wrapper .dr_wrapper {
-  padding: 3px;
+  position: relative;
+  width: 100%;
 }
 table.dr_table {
   border-spacing: 0;
@@ -29,6 +31,7 @@ table.dr_table {
 }
 table.dr_table tbody td {
   border: 1px #F7F7F7 solid;
+  line-height: initial;
 }
 .dr_calendar-container {
   margin: 0px;
@@ -111,11 +114,12 @@ table.dr_table tbody td {
   font-size: 19px;
   color: #1c2e3d;
   cursor: pointer;
+  margin-right: 15px;
 }
 #dr_calendarsHolder {
   position: absolute;
   top: 29px;
-  width: 740px;
+  width: 640px;
   background-color: #f7f7f7;
   border: 1px solid #ccc;
   padding: 8px 15px;
@@ -131,6 +135,9 @@ table.dr_table tbody td {
 }
 select.dr_select {
   font-size: 11px;
+  width: initial;
+  height: initial;
+  margin-left: 7px;
 }
 .dr_range_inputs input {
   width: 100px;
@@ -148,12 +155,32 @@ select.dr_select {
 }
 .dr_button.apply {
   width: 67px;
-  height: 22px;
+  height: 26px;
+  font-size: 13px;
 }
 .dr_range_inputs.disabled input {
   color: #808080;
   outline: none;
   border-top-width: 1px;
+}
+.dr_down-handler {
+  background: #E4E4E4 url("data:image/gif;base64,R0lGODlhCwAGAIABALKysv///yH5BAEAAAEALAAAAAALAAYAAAINhI8QieGs3GtSnoqjLAA7") no-repeat 50% 50%;
+  width: 20px;
+  height: 29px;
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+.dr_input-value-wrapper:hover {
+  border: 1px #9C9C9C solid;
+}
+.dr_calendarWrapper {
+  display: inline-block;
+  vertical-align: top;
 }
 .dr_clearfix:before, .dr_clearfix:after {
   content: "";

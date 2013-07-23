@@ -46,6 +46,10 @@ String get selectedPostClass => fbi.selectedPost == null ? '' : 'selectedPost';
 String get postsListClass => fbi.selectedPost == null ? 'span9' : 'span3';
 String get chooserClass => fbi.selectedPage == null ? 'span12' : fbi.selectedPost == null ? 'span3':'span0';
 
+/// For debug purpose.
+/// If it set to true the app will use external server configuration, even if it is launched in dev mode.
+bool useAppExternalServer = true;
+
 void main() {
   initializeDateFormatting(window.navigator.language, null).then((_){});
   fbi = new FacebookInsights();
@@ -405,6 +409,7 @@ class FacebookInsights extends Observable  {
       path = nextPagePostToken;
     }
     
+    
     FB.api(path).then((js.Proxy resp){
       pagePostListLoading = false;
       
@@ -473,39 +478,63 @@ class FacebookInsights extends Observable  {
     }
     dialog.xtag.show();
     
-    StreamSubscription<MouseEvent> ev;
-    ev = dialog.onClick.listen((Event e){
+    StreamSubscription<KeyboardEvent> kd_ev;
+    StreamSubscription<MouseEvent> mouse_ev;
+    StreamSubscription toggelEvent;
+    toggelEvent = dialog.on['toggle'].listen((Event e){
+      if(!dialog.xtag.isShown){
+        toggelEvent.cancel();
+        kd_ev.cancel();
+        mouse_ev.cancel();
+      }
+    });
+    
+    kd_ev = dialog.onKeyDown.listen((KeyboardEvent e){
+      if(e.keyCode != KeyCode.ENTER){
+        return;
+      }
+      Element el = e.target;
+      if(el.id == 'SpreadsheetName'){
+        var value = (el as InputElement).value;
+        _createSpreadsheetFromDialogValue(value);
+        dialog.xtag.hide();
+      }
+    });
+    
+    mouse_ev = dialog.onClick.listen((Event e){
       Element el = e.target;
       if(el.dataset.containsKey('accept')){
         InputElement ie = query('#SpreadsheetName');
         var value = ie.value;
-        
-        GDrive d = new GDrive(auth);
-        spreadsheetUpdating = true;
-        d.createStructuredSpreadsheet(value, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
-          .then((drivelib.File data) => SpreadsheetService.getSpreadsheetMetaData(data.id))
-            .then((SpreadsheetMeta metadata) => updatePagesConfig(metadata))
-            .then((_){spreadsheetUpdating = false;})
-            .catchError((e){
-              spreadsheetUpdating = false;
-              print('error');
-              window.console.log(e);
-            });
+        _createSpreadsheetFromDialogValue(value);
         dialog.xtag.hide();
-        ev.cancel();
       }
     });
   }
+  
+  void _createSpreadsheetFromDialogValue(String value){
+    GDrive d = new GDrive(auth);
+    spreadsheetUpdating = true;
+    d.createStructuredSpreadsheet(value, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
+      .then((drivelib.File data) => SpreadsheetService.getSpreadsheetMetaData(data.id))
+      .then((SpreadsheetMeta metadata) => updatePagesConfig(metadata))
+      .then((_){
+        spreadsheetUpdating = false;
+      })
+      .catchError((e){
+        spreadsheetUpdating = false;
+        window.console.log(e);
+      });
+  }
+  
   
   /// Event handler to handle "select spreadsheet" action
   void _selectSpreadsheetForPage(){
     
     if(!isGoogleConnected) {
-      new Toast.makeText("You must be signed in to Google Service to attach a spreadsheet.");
+      new Toast.makeText("You must be signed in to Google Service to attach a spreadsheet.").show();
       return;
     }
-    //TODO: dialog with information.
-    
     
     auth.login(immediate: true).then((var token){
       DrivePicker dp = new DrivePicker();
@@ -518,18 +547,17 @@ class FacebookInsights extends Observable  {
       })
       .catchError((e){
         spreadsheetUpdating = false;
-        print('error');
-        window.console.log(e);
-        new Toast.makeText("Error occured: $e");
+        new Toast.makeText("Error occured: $e").show();
       });
     })
     .catchError((e){
-      new Toast.makeText("Error occured: $e");
+      new Toast.makeText("Error occured: $e").show();
     });
   }
   
   
   void updatePagesConfig(SpreadsheetMeta metadata){
+    if(metadata == null) return;
     FacebookPageConfig cfg;
     if(facebookPagesConfig.containsKey(selectedPage)){
       cfg = facebookPagesConfig[selectedPage];
@@ -543,7 +571,8 @@ class FacebookInsights extends Observable  {
     cfg.spreadsheetTitle = metadata.title;
     cfg.fileId = metadata.id;
     facebookPagesConfig[selectedPage] = cfg;
-    //watchers.dispatch();
+    
+    watchers.dispatch();
     new AppStore().savePagesConfig(facebookPagesConfig);
   }
   
@@ -585,6 +614,7 @@ class FacebookInsights extends Observable  {
     
     new AppStore().savePagesConfig(facebookPagesConfig);
   }
+  
   /// Show dialog which allows a user create and attach new spreadsheet.
   void _addNewSheet(){
     if(!isGoogleConnected) return;
@@ -597,34 +627,63 @@ class FacebookInsights extends Observable  {
     
     dialog.xtag.show();
     
-    StreamSubscription<MouseEvent> ev;
-    ev = dialog.onClick.listen((Event e){
+    
+    StreamSubscription<KeyboardEvent> kd_ev;
+    StreamSubscription<MouseEvent> mouse_ev;
+    StreamSubscription toggelEvent;
+    toggelEvent = dialog.on['toggle'].listen((Event e){
+      if(!dialog.xtag.isShown){
+        toggelEvent.cancel();
+        kd_ev.cancel();
+        mouse_ev.cancel();
+      }
+    });
+    
+    kd_ev = dialog.onKeyDown.listen((KeyboardEvent e){
+      if(e.keyCode != KeyCode.ENTER){
+        return;
+      }
+      Element el = e.target;
+      if(el.id == 'SheetName'){
+        var value = (el as InputElement).value;
+        _updateSpreadsheetFromDialog(value);
+        dialog.xtag.hide();
+      }
+    });
+    
+    mouse_ev = dialog.onClick.listen((Event e){
       Element el = e.target;
       if(el.dataset.containsKey('accept')){
         InputElement ie = query('#SheetName');
         var value = ie.value;
-        
-        spreadsheetUpdating = true;
-        SpreadsheetService.addNewWorksheet(value, fbi.currentPageConfig.fileId, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
-          .then((SheetMeta meta){
-            spreadsheetUpdating = false;
-            FacebookPageConfig cfg = facebookPagesConfig[selectedPage];
-            cfg.sheetId = meta.id;
-            cfg.sheetTitle = meta.title;
-            facebookPagesConfig[selectedPage] = cfg;
-            new AppStore().savePagesConfig(facebookPagesConfig);
-            updateWorksheetListInActionMenu();
-          })
-          .catchError((e){
-            print('error');
-            window.console.log(e);
-          });
-          
-          dialog.xtag.hide();
-          ev.cancel();
-        }
+        _updateSpreadsheetFromDialog(value);
+        dialog.xtag.hide();
+      }
+    });
+  }
+  
+  
+  
+  void _updateSpreadsheetFromDialog(String value){
+    spreadsheetUpdating = true;
+    SpreadsheetService.addNewWorksheet(value, fbi.currentPageConfig.fileId, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
+      .then((SheetMeta meta){
+        spreadsheetUpdating = false;
+        FacebookPageConfig cfg = facebookPagesConfig[selectedPage];
+        cfg.sheetId = meta.id;
+        cfg.sheetTitle = meta.title;
+        facebookPagesConfig[selectedPage] = cfg;
+        new AppStore().savePagesConfig(facebookPagesConfig);
+        updateWorksheetListInActionMenu();
+      })
+      .catchError((e){
+        print('error');
+        window.console.log(e);
       });
   }
+  
+  
+  
   
   void updateWorksheetListInActionMenu(){
     spreadsheetSheetsListLoading = true;
@@ -798,7 +857,6 @@ class FacebookInsights extends Observable  {
   
   ///Select post for details
   void selectPost(String post_id){
-    selectedPost = null;
     Timer.run(() => _selectPost(post_id));
   }
   
@@ -815,7 +873,7 @@ class FacebookInsights extends Observable  {
         _.xtag.selection = false;
       }
     });
-    
+    window.scrollTo(0, 0); 
     pagePostInsightLoading = true;
     
     Fql fql = new Fql();
@@ -847,7 +905,6 @@ class FacebookInsights extends Observable  {
           new Toast.makeText("No insights data available for this post", Toast.LENGTH_INFINITY, true).show();
           return;
         }
-        
         pagePostInsights = data;
       })
       .catchError((e){
@@ -866,9 +923,14 @@ class FacebookInsights extends Observable  {
     }
     dateRangeStart = picker.xtag.selectionstart;
     dateRangeEnd = picker.xtag.selectionend;
+    if(dateRangeStart != null && dateRangeEnd != null){
+      if(dateRangeStart == dateRangeEnd){
+        //add 24 hr range
+        dateRangeEnd = dateRangeEnd.add(new Duration(hours:23, minutes: 59, seconds: 59));
+      }
+    }
     selectPage(selectedPage);
   }
-  
 }
 
 
@@ -901,6 +963,7 @@ class PostsSelectionController {
       _.xtag.selection = false;
     });
   }
+  
   
   void select(String post_id, bool state){
     if(postSelectedMode){
@@ -962,8 +1025,8 @@ If-none-match: 686897696a7c876b7e
 // Additional generated code
 void init_autogenerated() {
   var __root = autogenerated.document.body;
-  final __html0 = new autogenerated.Element.html('<span class="">You are not logged in to Google Services</span>'), __html1 = new autogenerated.Element.html('<input type="button" class="btn" value="Google login">'), __html10 = new autogenerated.Element.html('<div is="x-facebook-post-list-item"></div>'), __html11 = new autogenerated.Element.html('<div class="facebook-post-load-next">\n                  <a href="#" class="btn">Load more</a>\n                </div>'), __html12 = new autogenerated.Element.tag('template'), __html13 = new autogenerated.Element.tag('template'), __html14 = new autogenerated.Element.html('<div class="">Loading post data</div>'), __html15 = new autogenerated.Element.tag('template'), __html16 = new autogenerated.Element.html('<div class="span9" is="x-post-insights"></div>'), __html2 = new autogenerated.Element.html('<input type="button" class="btn" value="Logout Google">'), __html3 = new autogenerated.Element.html('<div class="progress progress-striped active">\n                <div class="bar" style="width: 100%;"></div>\n            </div>'), __html4 = new autogenerated.Element.html('<div class="row-fluid">\n          <!-- Not logged in to Facebook view -->\n          <div id="FacebookLogin" class="span4">\n            <div class="NotLoggedInMessage"><span class="hello">Hello,</span><br>You\'re not logged into Facebook. Login clicking button below.</div>\n            <div class="fblogin-action">\n              <input type="button" class="btn btn-primary" value="Facebook login">\n            </div>\n          </div>\n        </div>'), __html5 = new autogenerated.Element.html('<div class="page-content   row-fluid">\n          \n          <!-- Facebook page selector -->\n          <div id="PageChooser" class="">\n            <h2 class="wide-title">Choose a page</h2>\n            <template></template>\n          </div>\n          \n          \n          \n          <!-- Empty posts list message -->\n          <template></template>\n          \n          <!-- The list of posts -->\n          <template></template>\n        </div>'), __html6 = new autogenerated.Element.html('<div is="x-facebook-page-item"></div>'), __html7 = new autogenerated.Element.html('<div id="PostChooser" class="">\n              <div class="row-fluid">\n                <div class="span8">\n                  <h2 class="wide-title">Posts overview</h2>\n                </div>\n                <div class="span4 hidden-on-post-details">\n                  <div is="x-date-range" id="DateSelector"></div>\n                </div>  \n              </div>\n              <div class="row-fluid">\n                <div id="EmptyPostsList" class="span4">\n                  <div class="NoPostsMessage"><span class="hello">Hurray!</span><br>There\'s no post here. Go for a coffe.</div>\n                </div>\n              </div>\n            </div>'), __html8 = new autogenerated.Element.html('<div id="PostChooser" class="">\n              \n              <div class="row-fluid">\n                <div class="span8">\n                  <h2 class="wide-title"></h2>\n                </div>\n                <div class="span4 hidden-on-post-details">\n                  <div is="x-date-range" id="DateSelector"></div>\n                </div>  \n              </div>\n              \n              <template></template>\n              \n              <!-- Posts list -->\n              <div id="PostsListWrapper">\n              <template></template>\n              </div>\n              <!-- Load next button -->\n              <template></template>\n                \n            </div>'), __html9 = new autogenerated.Element.html('<div is="x-post-interaction"></div>');
-  var __e1, __e3, __e32, __e33, __e34, __e4, __e7;
+  final __html0 = new autogenerated.Element.html('<span class="">You are not logged in to Google Services</span>'), __html1 = new autogenerated.Element.html('<input type="button" class="btn" value="Google login">'), __html10 = new autogenerated.Element.html('<div is="x-post-interaction"></div>'), __html11 = new autogenerated.Element.html('<div is="x-facebook-post-list-item"></div>'), __html12 = new autogenerated.Element.html('<div class="facebook-post-load-next">\n                  <a href="#" class="btn">Load more</a>\n                </div>'), __html13 = new autogenerated.Element.tag('template'), __html14 = new autogenerated.Element.tag('template'), __html15 = new autogenerated.Element.html('<div class="postLoaderAnimation">\n                  <div class="spinner"></div>\n                  <h5>Loading post data<span class="dot">.</span></h5>\n                </div>'), __html16 = new autogenerated.Element.tag('template'), __html17 = new autogenerated.Element.html('<div class="span9" is="x-post-insights"></div>'), __html2 = new autogenerated.Element.html('<input type="button" class="btn" value="Logout Google">'), __html3 = new autogenerated.Element.html('<div class="headerProgress progress progress-striped active">\n                <div class="bar" style="width: 100%;"></div>\n            </div>'), __html4 = new autogenerated.Element.html('<div class="row-fluid">\n          <!-- Not logged in to Facebook view -->\n          <div id="FacebookLogin" class="span4">\n            <div class="NotLoggedInMessage"><span class="hello">Hello,</span><br>You\'re not logged into Facebook. Login clicking button below.</div>\n            <div class="fblogin-action">\n              <input type="button" class="btn btn-primary" value="Facebook login">\n            </div>\n          </div>\n        </div>'), __html5 = new autogenerated.Element.html('<div class="page-content   row-fluid">\n          \n          <!-- Facebook page selector -->\n          <div id="PageChooser" class="">\n            <h2 class="wide-title">Choose a page</h2>\n            <template></template>\n          </div>\n          \n          \n          \n          <!-- Empty posts list message -->\n          <template></template>\n          \n          <!-- The list of posts -->\n            \n          <template></template>\n            \n          <template></template>\n        </div>'), __html6 = new autogenerated.Element.html('<div is="x-facebook-page-item"></div>'), __html7 = new autogenerated.Element.html('<div id="PostChooser" class="">\n              <div class="row-fluid">\n                <div class="span8">\n                  <h2 class="wide-title">Posts overview</h2>\n                </div>\n                <div class="span4 hidden-on-post-details">\n                  <div is="x-date-range" id="DateSelector"></div>\n                </div>  \n              </div>\n              <div class="row-fluid">\n                <div id="EmptyPostsList" class="span4">\n                  <div class="NoPostsMessage"><span class="hello">Hurray!</span><br>There\'s no post here. Go for a coffe.</div>\n                </div>\n              </div>\n            </div>'), __html8 = new autogenerated.Element.html('<div class="span9 post-loading-animation-container">\n              <div class="postLoaderAnimation">\n                <div class="spinner"></div>\n                <h5>Loading post data<span class="dot">.</span></h5>\n              </div>\n            </div>'), __html9 = new autogenerated.Element.html('<div id="PostChooser" class="">\n              \n              <div class="row-fluid">\n                <div class="span6">\n                  <h2 class="wide-title"></h2>\n                </div>\n                <div class="date-range-selector span6 hidden-on-post-details">\n                  <div is="x-date-range" id="DateSelector"></div>\n                </div>  \n              </div>\n              \n              <template></template>\n              \n              <!-- Posts list -->\n              <div id="PostsListWrapper">\n              <template></template>\n              </div>\n              <!-- Load next button -->\n              <template></template>\n                \n            </div>');
+  var __e1, __e3, __e33, __e34, __e35, __e4, __e7;
   var __t = new autogenerated.Template(__root);
   __e1 = __root.nodes[1].nodes[1].nodes[1].nodes[1];
   __t.conditional(__e1, () => !fbi.isGoogleConnected, (__t) {
@@ -1006,11 +1069,11 @@ void init_autogenerated() {
       new autogenerated.Text('\n      ')]);
   });
 
-  __e32 = __root.nodes[3].nodes[3];
-  __t.conditional(__e32, () => fbi.isFacebookConnected, (__t) {
-    var __e10, __e13, __e30, __e31, __e9;
-    __e31 = __html5.clone(true);
-    __e10 = __e31.nodes[3];
+  __e33 = __root.nodes[3].nodes[3];
+  __t.conditional(__e33, () => fbi.isFacebookConnected, (__t) {
+    var __e10, __e13, __e14, __e31, __e32, __e9;
+    __e32 = __html5.clone(true);
+    __e10 = __e32.nodes[3];
     __e9 = __e10.nodes[3];
     __t.loop(__e9, () => fbi.pagesList, ($list, $index, __t) {
       var page = $list[$index];
@@ -1024,7 +1087,7 @@ void init_autogenerated() {
         new autogenerated.Text('\n            ')]);
     });
     __t.bindClass(__e10, () => chooserClass, false);
-    __e13 = __e31.nodes[7];
+    __e13 = __e32.nodes[7];
     __t.conditional(__e13, () => fbi.selectedPage != null && fbi.pagePostList.length == 0 && !fbi.loading, (__t) {
       var __e11, __e12;
       __e12 = __html7.clone(true);
@@ -1040,108 +1103,115 @@ void init_autogenerated() {
         new autogenerated.Text('\n          ')]);
     });
 
-    __e30 = __e31.nodes[11];
-    __t.conditional(__e30, () => fbi.pagePostList.length > 0, (__t) {
-      var __e15, __e16, __e18, __e20, __e21, __e24, __e25, __e29;
-      __e25 = __html8.clone(true);
-      __e15 = __e25.nodes[1].nodes[1].nodes[1];
-      var __binding14 = __t.contentBind(() => fbi.pagePostList.length, false);
-      __e15.nodes.addAll([new autogenerated.Text('Posts overview ('),
-          __binding14,
+    __e14 = __e32.nodes[11];
+    __t.conditional(__e14, () => fbi.pagePostList.length == 0 && fbi.loading, (__t) {
+    __t.addAll([new autogenerated.Text('\n            '),
+        __html8.clone(true),
+        new autogenerated.Text('\n          ')]);
+    });
+
+    __e31 = __e32.nodes[13];
+    __t.conditional(__e31, () => fbi.pagePostList.length > 0, (__t) {
+      var __e16, __e17, __e19, __e21, __e22, __e25, __e26, __e30;
+      __e26 = __html9.clone(true);
+      __e16 = __e26.nodes[1].nodes[1].nodes[1];
+      var __binding15 = __t.contentBind(() => fbi.pagePostList.length, false);
+      __e16.nodes.addAll([new autogenerated.Text('Posts overview ('),
+          __binding15,
           new autogenerated.Text(')')]);
-      __e16 = __e25.nodes[1].nodes[3].nodes[1];
-      __t.listen(__e16.onChange, ($event) { fbi.onDateRangeChange($event); });
-      __t.oneWayBind(() => today, (e) { if (__e16.xtag.limitright != e) __e16.xtag.limitright = e; }, false, false);
-      __t.oneWayBind(() => fbi.dateRangeEnd, (e) { if (__e16.xtag.selectionend != e) __e16.xtag.selectionend = e; }, false, false);
-      __t.oneWayBind(() => fbi.dateRangeStart, (e) { if (__e16.xtag.selectionstart != e) __e16.xtag.selectionstart = e; }, false, false);
-      __t.component(new DateRange()..host = __e16);
-      __e18 = __e25.nodes[3];
-      __t.conditional(__e18, () => fbi.selectedPost == null, (__t) {
-        var __e17;
-        __e17 = __html9.clone(true);
-        __t.oneWayBind(() => fbi, (e) { if (__e17.xtag.fbi != e) __e17.xtag.fbi = e; }, false, false);
-        __t.component(new PostInteraction()..host = __e17);
+      __e17 = __e26.nodes[1].nodes[3].nodes[1];
+      __t.listen(__e17.onChange, ($event) { fbi.onDateRangeChange($event); });
+      __t.oneWayBind(() => today, (e) { if (__e17.xtag.limitright != e) __e17.xtag.limitright = e; }, false, false);
+      __t.oneWayBind(() => fbi.dateRangeEnd, (e) { if (__e17.xtag.selectionend != e) __e17.xtag.selectionend = e; }, false, false);
+      __t.oneWayBind(() => fbi.dateRangeStart, (e) { if (__e17.xtag.selectionstart != e) __e17.xtag.selectionstart = e; }, false, false);
+      __t.component(new DateRange()..host = __e17);
+      __e19 = __e26.nodes[3];
+      __t.conditional(__e19, () => fbi.selectedPost == null, (__t) {
+        var __e18;
+        __e18 = __html10.clone(true);
+        __t.oneWayBind(() => fbi, (e) { if (__e18.xtag.fbi != e) __e18.xtag.fbi = e; }, false, false);
+        __t.component(new PostInteraction()..host = __e18);
       __t.addAll([new autogenerated.Text('\n                '),
-          __e17,
+          __e18,
           new autogenerated.Text('\n              ')]);
       });
 
-      __e21 = __e25.nodes[7];
-      __e20 = __e21.nodes[1];
-      __t.loop(__e20, () => fbi.pagePostList, ($list, $index, __t) {
+      __e22 = __e26.nodes[7];
+      __e21 = __e22.nodes[1];
+      __t.loop(__e21, () => fbi.pagePostList, ($list, $index, __t) {
         var post = $list[$index];
-        var __e19;
-        __e19 = __html10.clone(true);
-        __t.oneWayBind(() => fbi.postsSelectionController, (e) { if (__e19.xtag.ctrl != e) __e19.xtag.ctrl = e; }, false, false);
-        __t.oneWayBind(() => post['id'], (e) { if (__e19.dataset['id'] != e) __e19.dataset['id'] = e; }, false, false);
-        __t.oneWayBind(() => post, (e) { if (__e19.xtag.post != e) __e19.xtag.post = e; }, false, false);
-        __t.component(new FacebookPostListItemComponent()..host = __e19);
+        var __e20;
+        __e20 = __html11.clone(true);
+        __t.oneWayBind(() => fbi.postsSelectionController, (e) { if (__e20.xtag.ctrl != e) __e20.xtag.ctrl = e; }, false, false);
+        __t.oneWayBind(() => post['id'], (e) { if (__e20.dataset['id'] != e) __e20.dataset['id'] = e; }, false, false);
+        __t.oneWayBind(() => post, (e) { if (__e20.xtag.post != e) __e20.xtag.post = e; }, false, false);
+        __t.component(new FacebookPostListItemComponent()..host = __e20);
       __t.addAll([new autogenerated.Text('\n                '),
-          __e19,
+          __e20,
           new autogenerated.Text('\n              ')]);
       });
-      __t.listen(__e21.onClick, ($event) { fbi.postsListWrapperHandler($event); });
-      __e24 = __e25.nodes[11];
-      __t.conditional(__e24, () => fbi.isNextPagePostToken, (__t) {
-        var __e22, __e23;
-        __e23 = __html11.clone(true);
-        __e22 = __e23.nodes[1];
-        __t.listen(__e22.onClick, ($event) { fbi.loadNextPostsPage($event); });
+      __t.listen(__e22.onClick, ($event) { fbi.postsListWrapperHandler($event); });
+      __e25 = __e26.nodes[11];
+      __t.conditional(__e25, () => fbi.isNextPagePostToken, (__t) {
+        var __e23, __e24;
+        __e24 = __html12.clone(true);
+        __e23 = __e24.nodes[1];
+        __t.listen(__e23.onClick, ($event) { fbi.loadNextPostsPage($event); });
       __t.addAll([new autogenerated.Text('\n                '),
-          __e23,
+          __e24,
           new autogenerated.Text('\n              ')]);
       });
 
-      __t.bindClass(__e25, () => postsListClass, false);
-      __e29 = __html12.clone(true);
-      __t.conditional(__e29, () => fbi.selectedPost != null, (__t) {
-        var __e26, __e28;
-        __e26 = __html13.clone(true);
-        __t.conditional(__e26, () => fbi.selectedPost != null && fbi.pagePostInsightLoading, (__t) {
+      __t.bindClass(__e26, () => postsListClass, false);
+      __e30 = __html13.clone(true);
+      __t.conditional(__e30, () => fbi.selectedPost != null, (__t) {
+        var __e27, __e29;
+        __e27 = __html14.clone(true);
+        __t.conditional(__e27, () => fbi.selectedPost != null && fbi.pagePostInsightLoading, (__t) {
         __t.addAll([new autogenerated.Text('\n                '),
-            __html14.clone(true),
+            __html15.clone(true),
             new autogenerated.Text('\n              ')]);
         });
 
-        __e28 = __html15.clone(true);
-        __t.conditional(__e28, () => fbi.pagePostInsights != null && !fbi.pagePostInsightLoading, (__t) {
-          var __e27;
-          __e27 = __html16.clone(true);
-          __t.listen(__e27.onClick, ($event) { fbi.postsListWrapperHandler($event); });
-          __t.oneWayBind(() => fbi, (e) { if (__e27.xtag.ctrl != e) __e27.xtag.ctrl = e; }, false, false);
-          __t.component(new FacebookPostInsightView()..host = __e27);
+        __e29 = __html16.clone(true);
+        __t.conditional(__e29, () => fbi.pagePostInsights != null && !fbi.pagePostInsightLoading, (__t) {
+          var __e28;
+          __e28 = __html17.clone(true);
+          __t.listen(__e28.onClick, ($event) { fbi.postsListWrapperHandler($event); });
+          __t.oneWayBind(() => fbi, (e) { if (__e28.xtag.ctrl != e) __e28.xtag.ctrl = e; }, false, false);
+          __t.component(new FacebookPostInsightView()..host = __e28);
         __t.addAll([new autogenerated.Text('\n                '),
-            __e27,
+            __e28,
             new autogenerated.Text('\n              ')]);
         });
 
       __t.addAll([new autogenerated.Text('\n              '),
           new autogenerated.Text('\n              '),
-          __e26,
+          __e27,
           new autogenerated.Text('\n              '),
-          __e28,
+          __e29,
           new autogenerated.Text('\n            ')]);
       });
 
     __t.addAll([new autogenerated.Text('\n            '),
-        __e25,
+        __e26,
         new autogenerated.Text('\n            \n            '),
         new autogenerated.Text('\n            '),
-        __e29,
+        __e30,
         new autogenerated.Text('\n            \n            \n          ')]);
     });
 
-    __t.bindClass(__e31, () => selectedPageClass, false);
-    __t.bindClass(__e31, () => selectedPostClass, false);
+    __t.bindClass(__e32, () => selectedPageClass, false);
+    __t.bindClass(__e32, () => selectedPostClass, false);
   __t.addAll([new autogenerated.Text('\n        \n        \n        \n        '),
-      __e31,
+      __e32,
       new autogenerated.Text('\n      ')]);
   });
 
-  __e33 = __root.nodes[7];
-  __t.component(new Modal()..host = __e33);
-  __e34 = __root.nodes[9];
+  __e34 = __root.nodes[7];
   __t.component(new Modal()..host = __e34);
+  __e35 = __root.nodes[9];
+  __t.component(new Modal()..host = __e35);
   __t.create();
   __t.insert();
 }

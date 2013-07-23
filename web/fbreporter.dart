@@ -30,6 +30,10 @@ String get selectedPostClass => fbi.selectedPost == null ? '' : 'selectedPost';
 String get postsListClass => fbi.selectedPost == null ? 'span9' : 'span3';
 String get chooserClass => fbi.selectedPage == null ? 'span12' : fbi.selectedPost == null ? 'span3':'span0';
 
+/// For debug purpose.
+/// If it set to true the app will use external server configuration, even if it is launched in dev mode.
+bool useAppExternalServer = true;
+
 void main() {
   initializeDateFormatting(window.navigator.language, null).then((_){});
   fbi = new FacebookInsights();
@@ -186,6 +190,7 @@ class FacebookInsights {
       path = nextPagePostToken;
     }
     
+    
     FB.api(path).then((js.Proxy resp){
       pagePostListLoading = false;
       
@@ -254,39 +259,63 @@ class FacebookInsights {
     }
     dialog.xtag.show();
     
-    StreamSubscription<MouseEvent> ev;
-    ev = dialog.onClick.listen((Event e){
+    StreamSubscription<KeyboardEvent> kd_ev;
+    StreamSubscription<MouseEvent> mouse_ev;
+    StreamSubscription toggelEvent;
+    toggelEvent = dialog.on['toggle'].listen((Event e){
+      if(!dialog.xtag.isShown){
+        toggelEvent.cancel();
+        kd_ev.cancel();
+        mouse_ev.cancel();
+      }
+    });
+    
+    kd_ev = dialog.onKeyDown.listen((KeyboardEvent e){
+      if(e.keyCode != KeyCode.ENTER){
+        return;
+      }
+      Element el = e.target;
+      if(el.id == 'SpreadsheetName'){
+        var value = (el as InputElement).value;
+        _createSpreadsheetFromDialogValue(value);
+        dialog.xtag.hide();
+      }
+    });
+    
+    mouse_ev = dialog.onClick.listen((Event e){
       Element el = e.target;
       if(el.dataset.containsKey('accept')){
         InputElement ie = query('#SpreadsheetName');
         var value = ie.value;
-        
-        GDrive d = new GDrive(auth);
-        spreadsheetUpdating = true;
-        d.createStructuredSpreadsheet(value, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
-          .then((drivelib.File data) => SpreadsheetService.getSpreadsheetMetaData(data.id))
-            .then((SpreadsheetMeta metadata) => updatePagesConfig(metadata))
-            .then((_){spreadsheetUpdating = false;})
-            .catchError((e){
-              spreadsheetUpdating = false;
-              print('error');
-              window.console.log(e);
-            });
+        _createSpreadsheetFromDialogValue(value);
         dialog.xtag.hide();
-        ev.cancel();
       }
     });
   }
+  
+  void _createSpreadsheetFromDialogValue(String value){
+    GDrive d = new GDrive(auth);
+    spreadsheetUpdating = true;
+    d.createStructuredSpreadsheet(value, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
+      .then((drivelib.File data) => SpreadsheetService.getSpreadsheetMetaData(data.id))
+      .then((SpreadsheetMeta metadata) => updatePagesConfig(metadata))
+      .then((_){
+        spreadsheetUpdating = false;
+      })
+      .catchError((e){
+        spreadsheetUpdating = false;
+        window.console.log(e);
+      });
+  }
+  
   
   /// Event handler to handle "select spreadsheet" action
   void _selectSpreadsheetForPage(){
     
     if(!isGoogleConnected) {
-      new Toast.makeText("You must be signed in to Google Service to attach a spreadsheet.");
+      new Toast.makeText("You must be signed in to Google Service to attach a spreadsheet.").show();
       return;
     }
-    //TODO: dialog with information.
-    
     
     auth.login(immediate: true).then((var token){
       DrivePicker dp = new DrivePicker();
@@ -299,18 +328,17 @@ class FacebookInsights {
       })
       .catchError((e){
         spreadsheetUpdating = false;
-        print('error');
-        window.console.log(e);
-        new Toast.makeText("Error occured: $e");
+        new Toast.makeText("Error occured: $e").show();
       });
     })
     .catchError((e){
-      new Toast.makeText("Error occured: $e");
+      new Toast.makeText("Error occured: $e").show();
     });
   }
   
   
   void updatePagesConfig(SpreadsheetMeta metadata){
+    if(metadata == null) return;
     FacebookPageConfig cfg;
     if(facebookPagesConfig.containsKey(selectedPage)){
       cfg = facebookPagesConfig[selectedPage];
@@ -324,7 +352,8 @@ class FacebookInsights {
     cfg.spreadsheetTitle = metadata.title;
     cfg.fileId = metadata.id;
     facebookPagesConfig[selectedPage] = cfg;
-    //watchers.dispatch();
+    
+    watchers.dispatch();
     new AppStore().savePagesConfig(facebookPagesConfig);
   }
   
@@ -366,6 +395,7 @@ class FacebookInsights {
     
     new AppStore().savePagesConfig(facebookPagesConfig);
   }
+  
   /// Show dialog which allows a user create and attach new spreadsheet.
   void _addNewSheet(){
     if(!isGoogleConnected) return;
@@ -378,34 +408,63 @@ class FacebookInsights {
     
     dialog.xtag.show();
     
-    StreamSubscription<MouseEvent> ev;
-    ev = dialog.onClick.listen((Event e){
+    
+    StreamSubscription<KeyboardEvent> kd_ev;
+    StreamSubscription<MouseEvent> mouse_ev;
+    StreamSubscription toggelEvent;
+    toggelEvent = dialog.on['toggle'].listen((Event e){
+      if(!dialog.xtag.isShown){
+        toggelEvent.cancel();
+        kd_ev.cancel();
+        mouse_ev.cancel();
+      }
+    });
+    
+    kd_ev = dialog.onKeyDown.listen((KeyboardEvent e){
+      if(e.keyCode != KeyCode.ENTER){
+        return;
+      }
+      Element el = e.target;
+      if(el.id == 'SheetName'){
+        var value = (el as InputElement).value;
+        _updateSpreadsheetFromDialog(value);
+        dialog.xtag.hide();
+      }
+    });
+    
+    mouse_ev = dialog.onClick.listen((Event e){
       Element el = e.target;
       if(el.dataset.containsKey('accept')){
         InputElement ie = query('#SheetName');
         var value = ie.value;
-        
-        spreadsheetUpdating = true;
-        SpreadsheetService.addNewWorksheet(value, fbi.currentPageConfig.fileId, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
-          .then((SheetMeta meta){
-            spreadsheetUpdating = false;
-            FacebookPageConfig cfg = facebookPagesConfig[selectedPage];
-            cfg.sheetId = meta.id;
-            cfg.sheetTitle = meta.title;
-            facebookPagesConfig[selectedPage] = cfg;
-            new AppStore().savePagesConfig(facebookPagesConfig);
-            updateWorksheetListInActionMenu();
-          })
-          .catchError((e){
-            print('error');
-            window.console.log(e);
-          });
-          
-          dialog.xtag.hide();
-          ev.cancel();
-        }
+        _updateSpreadsheetFromDialog(value);
+        dialog.xtag.hide();
+      }
+    });
+  }
+  
+  
+  
+  void _updateSpreadsheetFromDialog(String value){
+    spreadsheetUpdating = true;
+    SpreadsheetService.addNewWorksheet(value, fbi.currentPageConfig.fileId, SpreadsheetService.PAGE_POSTS_COLUMNS_SET)
+      .then((SheetMeta meta){
+        spreadsheetUpdating = false;
+        FacebookPageConfig cfg = facebookPagesConfig[selectedPage];
+        cfg.sheetId = meta.id;
+        cfg.sheetTitle = meta.title;
+        facebookPagesConfig[selectedPage] = cfg;
+        new AppStore().savePagesConfig(facebookPagesConfig);
+        updateWorksheetListInActionMenu();
+      })
+      .catchError((e){
+        print('error');
+        window.console.log(e);
       });
   }
+  
+  
+  
   
   void updateWorksheetListInActionMenu(){
     spreadsheetSheetsListLoading = true;
@@ -579,7 +638,6 @@ class FacebookInsights {
   
   ///Select post for details
   void selectPost(String post_id){
-    selectedPost = null;
     Timer.run(() => _selectPost(post_id));
   }
   
@@ -596,7 +654,7 @@ class FacebookInsights {
         _.xtag.selection = false;
       }
     });
-    
+    window.scrollTo(0, 0); 
     pagePostInsightLoading = true;
     
     Fql fql = new Fql();
@@ -628,7 +686,6 @@ class FacebookInsights {
           new Toast.makeText("No insights data available for this post", Toast.LENGTH_INFINITY, true).show();
           return;
         }
-        
         pagePostInsights = data;
       })
       .catchError((e){
@@ -647,9 +704,14 @@ class FacebookInsights {
     }
     dateRangeStart = picker.xtag.selectionstart;
     dateRangeEnd = picker.xtag.selectionend;
+    if(dateRangeStart != null && dateRangeEnd != null){
+      if(dateRangeStart == dateRangeEnd){
+        //add 24 hr range
+        dateRangeEnd = dateRangeEnd.add(new Duration(hours:23, minutes: 59, seconds: 59));
+      }
+    }
     selectPage(selectedPage);
   }
-  
 }
 
 
@@ -682,6 +744,7 @@ class PostsSelectionController {
       _.xtag.selection = false;
     });
   }
+  
   
   void select(String post_id, bool state){
     if(postSelectedMode){

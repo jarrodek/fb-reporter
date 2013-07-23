@@ -17344,7 +17344,7 @@ _deserializeElement: function(id) {
 },
 
 "+_deserializeElement:1:0": 0}],
-["metadata", "../../../../dart/dart-sdk/lib/html/html_common/metadata.dart", , {
+["metadata", "../../../../darteditor/dart/dart-sdk/lib/html/html_common/metadata.dart", , {
 SupportedBrowser: {"": "Object;browserName,minimumVersion"},
 
 "+SupportedBrowser": 0,

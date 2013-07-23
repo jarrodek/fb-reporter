@@ -2,10 +2,10 @@ part of fbreporter;
 
 class SpreadsheetService {
   
-  static final List<String> PAGE_POSTS_COLUMNS_SET = ['Data','Entry','Attachment','Likes','Unique likes','Comment','Unique comment','Shares','Unique shares','Virality','Talking about this','Range'];
+  static final List<String> PAGE_POSTS_COLUMNS_SET = ['Data','Entry','Attachment','Likes','Unique likes','Comment','Unique comment','Shares','Unique shares','Virality','Talking about this','Range','Paid boost'];
   
   static String getAppServiceUrl(){
-    if(window.location.hostname.startsWith('127.')){
+    if(!useAppExternalServer && window.location.hostname.startsWith('127.')){
       return 'http://127.0.0.1:8080/api';
     }
     return 'https://fb-reporter.appspot.com/api';
@@ -21,6 +21,10 @@ class SpreadsheetService {
     String url = getAppServiceUrl();
     url += '/spreadsheet/getmeta?sheetid=$spreadsheetId';
     request.onError.listen((e){
+      if(request.status == 0){
+        completer.completeError(new Exception("Damn it Jim! Unable to connect application server: ${getAppServiceUrl()}"));
+        return;
+      }
       completer.completeError(e);
     });
     request.onLoad.listen((_){

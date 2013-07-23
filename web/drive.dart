@@ -59,11 +59,11 @@ class GDrive {
       xmlns:gs="http://schemas.google.com/spreadsheets/2006">''';
   
   
-  
+  ///TODO
   Future updateSpreadsheetStructure(drivelib.File file, [String spreadsheetId='od6']){
     Completer completer = new Completer();
     
-    var columnNames = ['Data','Entry','Attachment','Likes','Unique likes','Comment','Unique comment','Shares','Unique shares','Virality','Talking about this','Range'];
+    var columnNames = ['Data','Entry','Attachment','Likes','Unique likes','Comment','Unique comment','Shares','Unique shares','Virality','Talking about this','Range','Paid boost'];
     var id_str = 'https://spreadsheets.google.com/feeds/cells/${file.id}/${spreadsheetId}/private/full';
     var payload = ATOM_SPREADSHEET_BATCH_HEADER;
     payload += '<id>$id_str<id>';

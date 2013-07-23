@@ -120,7 +120,7 @@ class FB {
   
   static Future<List<FacebookPagePostInsight>> downloadDefaultInsights(List<String> postsList){
     var completer = new Completer();
-    String query1 = 'SELECT object_id,metric,value FROM insights WHERE period = 0 and metric IN ("post_impressions_unique","post_stories_by_action_type","post_story_adds_by_action_type_unique","post_storytellers") and object_id IN("';
+    String query1 = 'SELECT object_id,metric,value FROM insights WHERE period = 0 and metric IN ("post_impressions_unique","post_stories_by_action_type","post_story_adds_by_action_type_unique","post_storytellers","post_impressions_paid_unique") and object_id IN("';
     query1 += postsList.join('","');
     query1 += '")';
     var query = {
@@ -194,7 +194,9 @@ class FB {
       }
       String metricName = metric['metric'];
       switch(metricName){
-        case 'post_impressions_unique': ins.post_impressions_unique = metric['value']; break;
+        case 'post_impressions_unique': 
+          ins.post_impressions_unique = metric['value']; 
+        break;
         case 'post_stories_by_action_type': 
           FacebookPagePostStoryByAction sba = new FacebookPagePostStoryByAction();
           sba.like = metric['value']['like'];
@@ -209,7 +211,12 @@ class FB {
           sba.share = metric['value']['share'];
           ins.post_story_adds_by_action_type_unique = sba;
           break;
-        case 'post_storytellers': ins.post_storytellers = metric['value']; break;
+        case 'post_storytellers': 
+          ins.post_storytellers = metric['value']; 
+        break;
+        case 'post_impressions_paid_unique':
+          ins.post_impressions_paid_unique = metric['value'];
+          break;
       }
       _result[postId] = ins;
     }
@@ -316,6 +323,8 @@ class FacebookPagePostInsight {
     int pow = Math.pow(10, 2);
     return (res*pow).round() / pow;
   }
+  ///The number of people who saw your Page post in an ad or sponsored story. (Unique Users)
+  int post_impressions_paid_unique;
   
   /// Indicate if the post was sent to spreadsheet.
   bool isSent = false;
@@ -374,6 +383,8 @@ class FacebookPagePostInsight {
     payload += '<gsx:virality><![CDATA[${virality}%]]></gsx:virality>\n';
     payload += '<gsx:talkingaboutthis><![CDATA[${post_storytellers}]]></gsx:talkingaboutthis>\n';
     payload += '<gsx:range><![CDATA[${post_impressions_unique}]]></gsx:range>\n';
+    String paidBoost = post_impressions_paid_unique != null && post_impressions_paid_unique > 0 ? "yes" : "no";
+    payload += '<gsx:paidboost><![CDATA[${paidBoost}]]></gsx:paidboost>\n';
     payload += '</entry>';
     return payload;
   }

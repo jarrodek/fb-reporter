@@ -8,7 +8,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="fbreporter.css">
+    <link rel="stylesheet" href="css/fbreporter.css">
     <link rel="import" href="pageitem.html">
     <link rel="import" href="postlistitem.html">
     <link rel="import" href="post_interaction.html">
@@ -30,9 +30,9 @@
             <input type="button" class="btn" on-click="fbi.googleLogout()" value="Logout Google"/>
           </template>
         </div>
-        <div class="span1">
+        <div class="span1 progress-span">
           <template instantiate="if fbi.loading">
-            <div class="progress progress-striped active">
+            <div class="headerProgress progress progress-striped active">
                 <div class="bar" style="width: 100%;"></div>
             </div>
           </template>
@@ -95,14 +95,24 @@
           </template>
           
           <!-- The list of posts -->
+            
+          <template instantiate="if fbi.pagePostList.length == 0 && fbi.loading">
+            <div class="span9 post-loading-animation-container">
+              <div class="postLoaderAnimation">
+                <div class="spinner"></div>
+                <h5>Loading post data<span class="dot">.</span></h5>
+              </div>
+            </div>
+          </template>
+            
           <template instantiate="if fbi.pagePostList.length > 0">
             <div id="PostChooser" class="{{postsListClass}}">
               
               <div class="row-fluid">
-                <div class="span8">
+                <div class="span6">
                   <h2 class="wide-title">Posts overview ({{fbi.pagePostList.length}})</h2>
                 </div>
-                <div class="span4 hidden-on-post-details">
+                <div class="date-range-selector span6 hidden-on-post-details">
                   <x-date-range id="DateSelector" on-change="fbi.onDateRangeChange($event)" selectionend="{{fbi.dateRangeEnd}}" selectionstart="{{fbi.dateRangeStart}}" limitright="{{today}}"></x-date-range>
                 </div>  
               </div>
@@ -130,7 +140,10 @@
             <template instantiate="if fbi.selectedPost != null">
               <!-- loader -->
               <template instantiate="if fbi.selectedPost != null && fbi.pagePostInsightLoading">
-                <div class="">Loading post data</div>
+                <div class="postLoaderAnimation">
+                  <div class="spinner"></div>
+                  <h5>Loading post data<span class="dot">.</span></h5>
+                </div>
               </template>
               <template instantiate="if fbi.pagePostInsights != null && !fbi.pagePostInsightLoading">
                 <div on-click="fbi.postsListWrapperHandler($event)" class="span9" is="x-post-insights" ctrl="{{fbi}}"></div>
